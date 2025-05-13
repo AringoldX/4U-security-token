@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  min-height: 100vh;
+  background: #000717;
+  color: white;
+  font-family: Roboto, sans-serif;
+  line-height: 1;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  -webkit-appearance: none;
+  transition: 0.3s;
+  margin-top: -4px;
+  cursor: grab;
+}
+
+input::-webkit-slider-thumb {
+  background: #1cf2aa;
+  border: 2px solid white;
+}
+input::-webkit-slider-runnable-track {
+  background: #1cf2aa;
+  height: 4px;
+}
+
+button {
+  outline: none;
+}
+
+input {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+/* In your CSS file or <style> block */
+
+.text-gradient-outline {
+  font-weight: bold;
+  color: white;
+  -webkit-text-stroke: 1px transparent; /* Define the stroke width */
+  background: linear-gradient(
+    to right,
+    #ff7eb3,
+    #ff758c,
+    #42a5f5
+  ); /* Define the gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
